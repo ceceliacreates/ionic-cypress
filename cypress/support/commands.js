@@ -42,17 +42,3 @@ Cypress.Commands.add('disableTutorial', () => {
         },
       })
 })
-
-Cypress.Commands.add('swipeLeft', () => {
-    cy.get('.swiper-slide-active')
-    .trigger('mousedown', {position: "right"})
-    .trigger('mousemove', {clientX: 200, clientY: 300})
-    .trigger('mouseup', {force: true})
-})
-
-Cypress.Commands.add('swipeRight', () => {
-    cy.get('.swiper-slide-active')
-    .trigger('mousedown', {position: "left"})
-    .trigger('mousemove', {clientX: 500, clientY: 300})
-    .trigger('mouseup', {force: true})
-})

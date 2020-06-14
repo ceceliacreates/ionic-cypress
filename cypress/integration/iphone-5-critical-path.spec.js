@@ -6,18 +6,12 @@ describe("critical path", () => {
         cy.viewport('iphone-5')
       })
 
-    it.only("swipes through tutorial", () => {
-        //pauses added for demonstration purposes, can be removed
-
+    it.only("enables then disables tutorial", () => {
+        cy.log("ENABLE TUTORIAL")
         cy.enableTutorial();
-        cy.pause()
-        cy.swipeLeft();
-        cy.pause()
-        cy.swipeLeft();
-        cy.pause()
-        cy.swipeLeft();
-        cy.pause()
-        cy.contains("Continue").click();
+        cy.pause();
+        cy.log("DISABLE TUTORIAL");
+        cy.disableTutorial();
     })
 
     it("adds a session from list to favorites", () => {
