@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe("happy path", () => {
+describe("critical path", () => {
     beforeEach(() => {
    
         cy.viewport('iphone-5')
