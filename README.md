@@ -6,7 +6,7 @@ This contains a fork of the [Ionic Angular Conference Application](https://githu
 
 The main branch contains the complete spec of Cypress tests written for the talk. 
 
-If you want to start from scratch and follow along, checkout the "starter" branch.
+If you want to start from scratch and follow along, checkout the "starter" branch. (NOTE: This branch does not exist yet :sweat-smile:)
 
 ## Running the App
 
@@ -25,7 +25,7 @@ _Note: See [How to Prevent Permissions Errors](https://docs.npmjs.com/getting-st
 
 ## Running the Tests
 
-Cypress is a dependency of this repo and will install in the previous step. 
+Cypress is a dependency of this repo and will install in the previous step. You'll need to update the `baseUrl` in the `cypress.json` file to match the port where your app is running.
 
 ### Cypress Open Mode
 
@@ -47,7 +47,7 @@ Links to slides and a video of the talk coming soon!
 
 Want to learn more?
 
-Cypress Documentation
-Ionic Documentation
+[Cypress Documentation]('https://docs.cypress.io')
+[Ionic Documentation]('https://ionicframework.com/docs')
 
-Feel free to say hi to me on Twitter @ceceliacreates or create an issue here with comments and questions!
+Feel free to say hi to me on Twitter ]@ceceliacreates](https://www.twitter.com/ceceliacreates) or [create an issue here](https://github.com/ceceliacreates/ionic-cypress/issues/new) with comments and questions!

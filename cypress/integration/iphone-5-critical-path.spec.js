@@ -6,10 +6,9 @@ describe("happy path", () => {
         cy.viewport('iphone-5')
       })
 
-    it.skip('visits the page', () => {
+    it('visits site', () => {
 
-        cy.visit('/');
-
+        cy.visit('/')
     })
 
     it("swipes through tutorial", () => {
@@ -25,7 +24,7 @@ describe("happy path", () => {
         cy.disableTutorial();
         cy.contains('University of Ionic').click({force: true});
         cy.get('[data-cy=favorite]').click();
-        cy.get('.can-go-back > .header-md > ion-toolbar.in-toolbar > .buttons-first-slot > .md').click();
+        cy.get('[data-cy=back').click();
         cy.contains('Favorites').click();
         cy.contains('University of Ionic');
     })
@@ -33,21 +32,21 @@ describe("happy path", () => {
     it("enables dark mode", () => {
 
         cy.disableTutorial();
-        cy.get('.buttons-first-slot > .md').click();
-        cy.get('.item.ion-valid > .ng-valid').click();
+        cy.get('[data-cy=menu]').click();
+        cy.get('[data-cy=dark-mode]').click();
         cy.contains("Dark Mode").should('have.css', 'color', 'rgb(255, 255, 255)')
     })
 
     it("searches for a session and adds to favorites", () => {
 
         cy.disableTutorial();
-        cy.get('.buttons-last-slot > :nth-child(1)').click();
-        cy.get('.toolbar-title-default > .ng-pristine > .searchbar-input-container > .searchbar-input')
+        cy.get('[data-cy=search]').click();
+        cy.get('[data-cy=searchbar]')
         .click()
         .type("Angular{enter}")
         cy.contains("Angular Directives").click();
-        cy.get('.buttons-last-slot > :nth-child(1)').click();
-        cy.get('.buttons-first-slot > .md').click();
+        cy.get('[data-cy=favorite]').click();
+        cy.get('[data-cy=back]').click();
         cy.contains("Favorites").click();
         cy.contains("Angular Directives");
     })
