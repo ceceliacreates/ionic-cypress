@@ -47,7 +47,7 @@ Links to slides and a video of the talk coming soon!
 
 Want to learn more?
 
-[Cypress Documentation]('https://docs.cypress.io')
-[Ionic Documentation]('https://ionicframework.com/docs')
+[Cypress Documentation](https://docs.cypress.io)
+[Ionic Documentation](https://ionicframework.com/docs)
 
-Feel free to say hi to me on Twitter ]@ceceliacreates](https://www.twitter.com/ceceliacreates) or [create an issue here](https://github.com/ceceliacreates/ionic-cypress/issues/new) with comments and questions!
+Feel free to say hi to me on Twitter [@ceceliacreates](https://www.twitter.com/ceceliacreates) or [create an issue here](https://github.com/ceceliacreates/ionic-cypress/issues/new) with comments and questions!
