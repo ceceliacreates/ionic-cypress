@@ -1,21 +1,18 @@
-# Ionic Angular Conference Application
+# End-to-end testing mobile apps with Ionic and Cypress
 
-This application is purely a kitchen-sink demo of the Ionic Framework and Angular.
+Hello! This is the repository for the "End-to-end testing mobile apps with Ionic and Cypress" talk at Ioniconf 2020. 
 
-**There is not an actual Ionic Conference at this time.** This project is just to show off Ionic components in a real-world application. Please go through the steps in [CONTRIBUTING](https://github.com/ionic-team/ionic-conference-app/blob/master/.github/CONTRIBUTING.md) before submitting an issue.
+This contains a fork of the [Ionic Angular Conference Application](https://github.com/ionic-team/ionic-conference-app). 
 
+The main branch contains the complete spec of Cypress tests written for the talk. 
 
-## Table of Contents
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [App Preview](#app-preview)
-- [Deploying](#deploying)
-  - [Progressive Web App](#progressive-web-app)
-  - [Android](#android)
-  - [iOS](#ios)
+If you want to start from scratch and follow along, checkout the "starter" branch.
 
+## Running the App
 
-## Getting Started
+Peep these awesome instructions straight from the ionic-conference-app repo:
+
+### Getting Started
 
 * [Download the installer](https://nodejs.org/) for Node LTS.
 * Install the ionic CLI globally: `npm install -g ionic`
@@ -26,57 +23,31 @@ This application is purely a kitchen-sink demo of the Ionic Framework and Angula
 
 _Note: See [How to Prevent Permissions Errors](https://docs.npmjs.com/getting-started/fixing-npm-permissions) if you are running into issues when trying to install packages globally._
 
-## Contributing
+## Running the Tests
 
-See [CONTRIBUTING.md](https://github.com/ionic-team/ionic-conference-app/blob/master/.github/CONTRIBUTING.md) :tada::+1:
+Cypress is a dependency of this repo and will install in the previous step. 
 
+### Cypress Open Mode
 
-## App Preview
+With the app running, in a new terminal run `npx cypress open` to open the Test Runner.
 
-### [Menu](https://github.com/ionic-team/ionic-conference-app/blob/master/src/app/pages/menu/menu.html)
+Click the `iphone-5-critical-path.spec.js` folder.
 
-| Material Design  | iOS  |
-| -----------------| -----|
-| ![Android Menu](/resources/screenshots/android-menu.png) | ![iOS Menu](/resources/screenshots/ios-menu.png) |
+Watch the magic happen. :sparkle:
 
+### Cypress Run Mode
 
-### [Schedule Page](https://github.com/ionic-team/ionic-conference-app/blob/master/src/app/pages/schedule/schedule.html)
+If you'd like to run your tests headlessly, in CI, or record the results to the Cypress Dashboard, you can bypass the Test Runner using `npx cypress run` instead.
 
-| Material Design  | iOS  |
-| -----------------| -----|
-| ![Android Schedule](/resources/screenshots/android-schedule.png) | ![iOS Schedule](/resources/screenshots/ios-schedule.png) |
-
-### [Speakers Page](https://github.com/ionic-team/ionic-conference-app/blob/master/src/app/pages/speaker-list/speaker-list.html)
-
-| Material Design  | iOS  |
-| -----------------| -----|
-| ![Android Speakers](/resources/screenshots/android-speakers.png) | ![iOS Speakers](/resources/screenshots/ios-speakers.png) |
-
-### [Speaker Detail Page](https://github.com/ionic-team/ionic-conference-app/blob/master/src/app/pages/speaker-detail/speaker-detail.html)
-
-| Material Design  | iOS  |
-| -----------------| -----|
-| ![Android Speaker Detail](/resources/screenshots/android-speaker-detail.png) | ![iOS Speaker Detail](/resources/screenshots/ios-speaker-detail.png) |
-
-### [About Page](https://github.com/ionic-team/ionic-conference-app/blob/master/src/app/pages/about/about.html)
-
-| Material Design  | iOS  |
-| -----------------| -----|
-| ![Android About](/resources/screenshots/android-about.png) | ![iOS About](/resources/screenshots/ios-about.png) |
+There are a lot of fancy options you can pass, including specifying a browser, setting environment variables, and passing your record key for the Dashboard. 
 
 
-## Deploying
 
-### Progressive Web App
+Links to slides and a video of the talk coming soon!
 
-1. Un-comment [these lines](https://github.com/ionic-team/ionic2-app-base/blob/master/src/index.html#L21)
-2. Run `npm run ionic:build --prod`
-3. Push the `www` folder to your hosting service
+Want to learn more?
 
-### Android
+Cypress Documentation
+Ionic Documentation
 
-1. Run `ionic cordova run android --prod`
-
-### iOS
-
-1. Run `ionic cordova run ios --prod`
+Feel free to say hi to me on Twitter @ceceliacreates or create an issue here with comments and questions!
