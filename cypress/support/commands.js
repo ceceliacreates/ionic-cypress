@@ -53,6 +53,6 @@ Cypress.Commands.add('swipeLeft', () => {
 Cypress.Commands.add('swipeRight', () => {
     cy.get('.swiper-slide-active')
     .trigger('mousedown', {position: "left"})
-    .trigger('mousemove', {clientX: 500, clientY: 3000})
+    .trigger('mousemove', {clientX: 500, clientY: 300})
     .trigger('mouseup', {force: true})
 })
