@@ -39,7 +39,7 @@ Watch the magic happen. :sparkle:
 
 If you'd like to run your tests headlessly, in CI, or record the results to the Cypress Dashboard, you can bypass the Test Runner using `npx cypress run` instead.
 
-There are a lot of fancy options you can pass, including specifying a browser, setting environment variables, and passing your record key for the Dashboard. 
+There are a lot of [fancy options you can pass](https://docs.cypress.io/guides/guides/command-line.html#cypress-run), including specifying a browser, setting environment variables, and passing your record key for the Dashboard. 
 
 
 
@@ -47,7 +47,7 @@ Links to slides and a video of the talk coming soon!
 
 Want to learn more?
 
-[Cypress Documentation](https://docs.cypress.io)
-[Ionic Documentation](https://ionicframework.com/docs)
+- [Cypress Documentation](https://docs.cypress.io)
+- [Ionic Documentation](https://ionicframework.com/docs)
 
 Feel free to say hi to me on Twitter [@ceceliacreates](https://www.twitter.com/ceceliacreates) or [create an issue here](https://github.com/ceceliacreates/ionic-cypress/issues/new) with comments and questions!
