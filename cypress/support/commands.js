@@ -23,22 +23,3 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
-import { Storage } from '@ionic/storage';
-
-const storage = new Storage;
-
-Cypress.Commands.add('enableTutorial', () => {
-  cy.visit('/', {
-    onBeforeLoad () {
-      storage.set('ion_did_tutorial', false)
-    }
-  })
-})
-
-Cypress.Commands.add('disableTutorial', () => {
-    cy.visit('/', {
-        onBeforeLoad () {
-          storage.set('ion_did_tutorial', true)
-        },
-      })
-})
