@@ -6,7 +6,13 @@ This contains a fork of the [Ionic Angular Conference Application](https://githu
 
 The main branch contains the complete spec of Cypress tests written for the talk. 
 
-If you want to start from scratch and follow along, checkout the "starter" branch. (NOTE: This branch does not exist yet :sweat-smile:)
+If you want to start from scratch and follow along, checkout the "starter" branch.
+
+You can also check out the following branches to hone in on specific behavior:
+
+"viewport"
+"storage"
+"swipe"
 
 ## Running the App
 
