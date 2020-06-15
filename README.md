@@ -4,15 +4,15 @@ Hello! This is the repository for the "End-to-end testing mobile apps with Ionic
 
 This contains a fork of the [Ionic Angular Conference Application](https://github.com/ionic-team/ionic-conference-app). 
 
-The main branch contains the complete spec of Cypress tests written for the talk. 
+The `main` branch contains the complete spec of Cypress tests written for the talk. 
 
-If you want to start from scratch and follow along, checkout the "starter" branch.
+If you want to start from scratch and follow along, checkout the `starter` branch.
 
 You can also check out the following branches to hone in on specific behavior:
 
-"viewport"
-"storage"
-"swipe"
+- `viewport`
+- `storage`
+- `swipe`
 
 ## Running the App
 
