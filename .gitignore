@@ -19,6 +19,7 @@ npm-debug.log*
 .tmp/
 .versions/
 coverage/
+cypress/videos
 dist/
 node_modules/
 tmp/
