@@ -11,7 +11,7 @@ describe("critical path", () => {
         cy.visit('/')
     })
 
-    it("swipes through tutorial", () => {
+    it.only("swipes through tutorial", () => {
 
         cy.enableTutorial();
         cy.swipeLeft();
