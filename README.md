@@ -4,7 +4,7 @@ Hello! This is the repository for the "End-to-end testing mobile apps with Ionic
 
 [Talk Slides](https://cypress.slides.com/cecelia/deck)
 
-[![Slides](./resources/deck.png)](http://google.com.au/)
+[![Slides](./resources/deck.png)](https://cypress.slides.com/cecelia/deck)
 
 This contains a fork of the [Ionic Angular Conference Application](https://github.com/ionic-team/ionic-conference-app). 
 
