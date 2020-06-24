@@ -9,15 +9,15 @@ describe("critical path", () => {
     it.only("swipes through tutorial", () => {
         //pauses added for demonstration purposes, can be removed
 
-        cy.enableTutorial();
+        cy.enableTutorial()
         cy.pause()
-        cy.swipeLeft();
+        cy.swipeLeft()
         cy.pause()
-        cy.swipeLeft();
+        cy.swipeLeft()
         cy.pause()
-        cy.swipeLeft();
+        cy.swipeLeft()
         cy.pause()
-        cy.contains("Continue").click();
+        cy.contains("Continue").click()
     })
 
 })

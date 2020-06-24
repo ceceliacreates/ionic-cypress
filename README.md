@@ -1,6 +1,10 @@
 # End-to-end testing mobile apps with Ionic and Cypress
 
-Hello! This is the repository for the "End-to-end testing mobile apps with Ionic and Cypress" talk at Ioniconf 2020. 
+Hello! This is the repository for the "End-to-end testing mobile apps with Ionic and Cypress" talk at Ioniconf 2020.
+
+[Talk Slides](https://cypress.slides.com/cecelia/deck)
+
+[![Slides](./resources/deck.png)](http://google.com.au/)
 
 This contains a fork of the [Ionic Angular Conference Application](https://github.com/ionic-team/ionic-conference-app). 
 
