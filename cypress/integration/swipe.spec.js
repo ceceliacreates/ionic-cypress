@@ -1,23 +1,21 @@
 /// <reference types="cypress" />
 
 describe("critical path", () => {
-    beforeEach(() => {
-   
-        cy.viewport('iphone-5')
-      })
+  beforeEach(() => {
+    cy.viewport("iphone-5");
+  });
 
-    it.only("swipes through tutorial", () => {
-        //pauses added for demonstration purposes, can be removed
+  it.only("swipes through tutorial", () => {
+    //pauses added for demonstration purposes, can be removed
 
-        cy.enableTutorial()
-        cy.pause()
-        cy.swipeLeft()
-        cy.pause()
-        cy.swipeLeft()
-        cy.pause()
-        cy.swipeLeft()
-        cy.pause()
-        cy.contains("Continue").click()
-    })
-
-})
+    cy.enableTutorial();
+    cy.wait(1000);
+    cy.swipeLeft();
+    cy.wait(1000);
+    cy.swipeLeft();
+    cy.wait(1000);
+    cy.swipeLeft();
+    cy.wait(1000);
+    cy.contains("Continue").click();
+  });
+});
